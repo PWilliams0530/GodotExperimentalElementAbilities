@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://crhv52dy48gis"]
+
+[ext_resource type="Script" path="res://Scenes/Spells/Fire/Firebolt/Firebolt.gd" id="1_4exkh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1eolj"]
+
+[node name="Firebolt" type="Area2D"]
+script = ExtResource("1_4exkh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1eolj")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)

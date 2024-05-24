@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://iuij02binht"]
+
+[ext_resource type="PackedScene" uid="uid://cu5mdmarl2kd7" path="res://Scenes/Characters/Player/Player.tscn" id="1_ibhui"]
+
+[node name="Main" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource("1_ibhui")]
+position = Vector2(318, 186)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
